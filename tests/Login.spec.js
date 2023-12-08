@@ -18,7 +18,7 @@ test('login com sucesso @login', async ({ page }) => {
 });
 
 
-test('login sem senha @ssenha @login', async ({ page }) => {
+test('login sem senha @login', async ({ page }) => {
   
   await page.getByRole('link', { name: ' Login' }).click()
   await page.locator('#user').click()
@@ -28,7 +28,7 @@ test('login sem senha @ssenha @login', async ({ page }) => {
 });
 
 
-test('login sem email @semail @login', async ({ page }) => {
+test('login sem email @login', async ({ page }) => {
   
   await page.getByRole('link', { name: ' Login' }).click()
   await page.locator('#password').click()
@@ -38,7 +38,7 @@ test('login sem email @semail @login', async ({ page }) => {
 });
 
 
-test('login sem email e senha @semailsenha @login', async ({ page }) => {
+test('login sem email e senha @login', async ({ page }) => {
   
   await page.getByRole('link', { name: ' Login' }).click()
   await page.getByRole('button', { name: 'login' }).click()
@@ -46,7 +46,7 @@ test('login sem email e senha @semailsenha @login', async ({ page }) => {
 });
 
 
-test('login com menos de 6 caracteres @6caracteres @login', async ({ page }) => {
+test('login com menos de 6 caracteres @login', async ({ page }) => {
   
   await page.getByRole('link', { name: ' Login' }).click()
   await page.locator('#user').click()
