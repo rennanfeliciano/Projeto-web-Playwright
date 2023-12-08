@@ -8,7 +8,6 @@ test.beforeEach (async ({ page }) => {
 //Cenarios de testes
 test('login com sucesso @login', async ({ page }) => {
   
-  await page.screenshot({ path: 'screenshot/screenshot1.png' })
   await page.getByRole('link', { name: ' Login' }).click()
   await page.locator('#user').click()
   await page.locator('#user').fill('rennanzinho@gmail.com')
