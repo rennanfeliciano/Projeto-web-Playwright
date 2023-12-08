@@ -56,3 +56,9 @@ test('Cadastro sem senha @cadastro', async ({ page }) => {
 });
 
 
+test('Cadastro sem preencher @cadastro', async ({ page }) => {
+  
+  await page.getByRole('link', { name: ' Cadastro' }).click()
+  await page.getByRole('button', { name: 'cadastrar' }).click()
+  await page.getByText('O campo nome deve ser prenchido')
+});
