@@ -13,6 +13,20 @@ Este repositório contém cenários de teste automatizados utilizando o Playwrig
   - `Login.spec.js`: Cenários de teste relacionados ao processo de login.
   - `Cadastro.spec.js`: Cenários de teste relacionados ao processo de cadastro.
   - `Carrinho.test.js`: Cenários de teste relacionados ao processo de carrinho de compras.
+  
+## Configuração do Ambiente
+
+Certifique-se de ter o Node.js e o npm instalados. Em seguida, instale as dependências do projeto:
+```bash
+npm install
+npm install playwright
+```
+## Executando os testes
+
+Para executar todos os testes, utilize o seguinte comando:
+```bash
+npm playwright test
+```
 
 # Contato
 https://www.linkedin.com/in/rennanfeliciano/
